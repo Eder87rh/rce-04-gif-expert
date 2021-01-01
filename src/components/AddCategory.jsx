@@ -7,11 +7,15 @@ const AddCategory = () => {
     setInputValue(e.target.value);
   };
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("submit hecho");
+  };
+
   return (
-    <>
-      <h1>{inputValue}</h1>
+    <form action="" onSubmit={handleSubmit}>
       <input type="text" value={inputValue} onChange={handleInputChange} />
-    </>
+    </form>
   );
 };
 
