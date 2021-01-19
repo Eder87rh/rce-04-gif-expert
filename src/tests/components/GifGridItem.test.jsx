@@ -5,7 +5,9 @@ import toJson from "enzyme-to-json";
 
 describe("GidGridItem.jsx", () => {
   it("Component should display correctly", () => {
-    const wrapper = shallow(<GifGridItem id="1" title="title" url="url" />);
+    const title = "title";
+    const url = "https://url.com/image.jpg";
+    const wrapper = shallow(<GifGridItem title={title} url={url} />);
     expect(toJson(wrapper)).toMatchSnapshot();
   });
 });

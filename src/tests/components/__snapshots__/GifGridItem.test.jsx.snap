@@ -6,7 +6,7 @@ exports[`GidGridItem.jsx Component should display correctly 1`] = `
 >
   <img
     alt="title"
-    src="url"
+    src="https://url.com/image.jpg"
   />
   <p>
     title
