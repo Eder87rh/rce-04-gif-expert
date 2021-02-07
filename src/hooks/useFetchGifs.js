@@ -9,10 +9,6 @@ export const useFetchGifs = (category) => {
 
   useEffect(() => {
     getGifs(category).then((images) => {
-      console.log(
-        "🚀 ~ file: useFetshGifs.js ~ line 13 ~ useEffect ~ images",
-        images
-      );
       setState({
         data: images,
         loading: false,

@@ -6,10 +6,6 @@ const AddCategory = ({ setCategories }) => {
 
   const handleInputChange = (e) => {
     setInputValue(e.target.value);
-    console.log(
-      "🚀 ~ file: AddCategory.jsx ~ line 10 ~ handleInputChange ~ handleInputChange",
-      handleInputChange
-    );
   };
 
   const handleSubmit = (e) => {
